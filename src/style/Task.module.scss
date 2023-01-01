@@ -1,0 +1,32 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 1100px;
+  padding: 20px;
+  margin: 40px auto;
+  box-shadow: 1px 4px 8px grey;
+  border-radius: 8px;
+  background-color: lightgrey;
+}
+
+.bin {
+  background-color: white;
+  border: 1px solid red;
+  color: red;
+  padding: 4px;
+  font-weight: bold;
+  width: 50px;
+}
+
+.finish {
+  background-color: black;
+  border: 1px solid black;
+  color: white;
+  padding: 4px;
+  font-weight: bold;
+  width: 50px;
+}
+.add {
+    margin:10px;
+    font-size: 30px;
+}

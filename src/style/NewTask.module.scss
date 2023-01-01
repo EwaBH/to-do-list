@@ -1,0 +1,41 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 1100px;
+  height: 300px;
+  padding: 20px;
+  margin: 0 auto;
+  box-shadow: 1px 4px 8px grey;
+  border-radius: 8px;
+}
+.header {
+  font-size: 40px;
+  font-weight: 700px;
+  padding: 10px;
+  margin: 10px;
+}
+
+.box {
+  display: flex;
+  border: 1px solid grey;
+  width: 1000px;
+  height: 30px;
+  padding: 10px;
+  margin: 10px;
+  
+  
+}
+
+.btn {
+  background-color: rgb(29, 150, 168);
+  color: #fff;
+  padding: 10px;
+  margin: 10px;
+  border: 1px solid rgb(29, 150, 168);
+ 
+}
+
+.add {
+    margin-left:10px;
+    font-size: 20px;
+}
