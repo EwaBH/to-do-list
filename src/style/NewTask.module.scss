@@ -8,6 +8,7 @@
   box-shadow: 1px 4px 8px grey;
   border-radius: 8px;
 }
+
 .header {
   font-size: 40px;
   font-weight: 700px;
@@ -22,20 +23,20 @@
   height: 30px;
   padding: 10px;
   margin: 10px;
-  
-  
 }
 
 .btn {
   background-color: rgb(29, 150, 168);
+  border: none;
   color: #fff;
   padding: 10px;
   margin: 10px;
-  border: 1px solid rgb(29, 150, 168);
- 
+  &:hover {
+    background-color: rgb(25, 129, 145);
+  }
 }
 
 .add {
-    margin-left:10px;
-    font-size: 20px;
+  margin-left: 10px;
+  font-size: 20px;
 }

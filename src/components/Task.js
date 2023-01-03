@@ -8,8 +8,11 @@ import Operations from "./Operations";
 import style from "../style/Task.module.scss";
 import "../style/main.scss";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
- import { faCirclePlus } from "@fortawesome/free-solid-svg-icons";
-
+import {
+  faCirclePlus,
+  faTrash,
+  faCheckToSlot,
+} from "@fortawesome/free-solid-svg-icons";
 
 const Task = ({ task, setTasks }) => {
   const [operations, setOperations] = useState([]);
@@ -76,45 +79,41 @@ const Task = ({ task, setTasks }) => {
         </div>
         {task.status === "open" && (
           <div>
-            <button onClick={openAddOperationForm}>
-              {/* <span
-                className={["material-symbols-outlined", style.add].join(" ")}
-              >
-                add_circle
-              </span> */}
-              <FontAwesomeIcon
-                icon={faCirclePlus}
-                className={style.add}
-              />
+            <button
+              onClick={openAddOperationForm}
+              className={[style.btn, "all"].join(" ")}
+            >
+              Add operation
+              <FontAwesomeIcon icon={faCirclePlus} className={style.add} />
             </button>
-            <button onClick={finishTask}>
-              <span
-                className={["material-symbols-outlined", style.finish].join(
-                  " "
-                )}
-              >
-                check_box
-              </span>
+
+            <button
+              onClick={finishTask}
+              className={[style.btn3, "all"].join(" ")}
+            >
+              Finish
+              <FontAwesomeIcon icon={faCheckToSlot} className={style.finish} />
             </button>
+           
           </div>
         )}
+
         {operations.length === 0 && task.status === "closed" && (
-          <button onClick={deleteTaskItem}>
-            <span
-              className={["material-symbols-outlined", style.bin].join(" ")}
-            >
-              delete
-            </span>
+          <button
+            onClick={deleteTaskItem}
+            className={[style.btn2, "all"].join(" ")}
+          >
+            <FontAwesomeIcon icon={faTrash} className={style.bin} />
           </button>
         )}
-        <Operations
-          task={task}
-          form={internalState}
-          setForm={setInternalState}
-          operations={operations}
-          setOperations={setOperations}
-        />
       </section>
+      <Operations
+        task={task}
+        form={internalState}
+        setForm={setInternalState}
+        operations={operations}
+        setOperations={setOperations}
+      />
     </>
   );
 };

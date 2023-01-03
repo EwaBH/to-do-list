@@ -3,30 +3,62 @@
   justify-content: space-between;
   width: 1100px;
   padding: 20px;
-  margin: 40px auto;
-  box-shadow: 1px 4px 8px grey;
-  border-radius: 8px;
-  background-color: lightgrey;
+  margin: 30px auto;
+  margin-bottom: 0;
+  box-shadow: 1px 3px 6px grey;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: rgb(229, 227, 227);
 }
 
 .bin {
   background-color: white;
   border: 1px solid red;
   color: red;
-  padding: 4px;
+  padding: 12px;
+  border-radius: 8px;
   font-weight: bold;
-  width: 50px;
+  width: 40px;
+  &:hover {
+    background-color: red;
+    color: white;
+  }
 }
 
 .finish {
   background-color: black;
   border: 1px solid black;
   color: white;
-  padding: 4px;
-  font-weight: bold;
-  width: 50px;
+  width: 35px;
+  
 }
+
+.btn {
+  background-color: rgb(29, 150, 168);
+  border: none;
+  color: #fff;
+  padding: 10px;
+  margin: 30px;
+  &:hover {
+    background-color:rgb(25, 129, 145);
+  }
+}
+
 .add {
-    margin:10px;
-    font-size: 30px;
+  margin-left: 10px;
+  font-size: 20px;
+}
+
+.btn2 {
+  border: none;
+  background-color:  rgb(229, 227, 227);
+}
+
+.btn3 {
+  background-color: black;
+  color: white;
+  padding: 9px;
+  margin: 20px 0;
+  padding-left: 10px;
+  // margin-left: 8px;
 }

@@ -1,0 +1,169 @@
+.container {
+  display: flex;
+  width: 1100px;
+  margin: 0 auto;
+  border: 1px solid lightgray;
+}
+
+.clock {
+  margin-left: 10px;
+  margin: 10px;
+}
+
+.bin {
+  background-color: white;
+  border: 1px solid red;
+  color: red;
+  padding: 14px;
+  border-radius: 8px;
+  font-weight: bold;
+  width: 40px;
+  &:hover {
+    background-color: red;
+    color: white;
+  }
+}
+.btn2 {
+  display: flex;
+  border: none;
+  background-color: white;
+}
+
+.btn {
+  display: flex;
+  background-color: rgb(29, 150, 168);
+  border: 1px solid rgb(29, 150, 168);
+  color: #fff;
+  padding: 10px;
+  margin: 10px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+.btnAddTime {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #28a745;
+  color: #28a745;
+  height: 50px;
+  padding: 8px;
+  padding-left: 12px;
+  &:hover {
+    background-color: #28a745;
+    color: white;
+  }
+}
+.clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+}
+.clock__small {
+  margin-left: 10px;
+  background-color: #28a745;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  height: 22px;
+  border-radius: 0.7rem;
+  padding: 7px 7px 1px 7px;
+}
+
+.submitOperation {
+  width: 550px;
+  height: 40px;
+  padding: 20px;
+  font-size: 18px;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.submitOperation2 {
+  display: flex;
+  align-items: center;
+  // justify-content: center;
+
+  justify-content: end;
+  width: 550px;
+  height: 40px;
+  padding: 20px;
+  
+}
+
+.disk {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #28a745;
+  color: #28a745;
+
+  width: 50px;
+  height: 50px;
+  &:hover {
+    background-color: #28a745;
+    color: white;
+  }
+}
+
+.operationTime {
+  display: flex;
+  justify-content: end;
+  right: 0;
+}
+
+.operationTimeDiscription {
+  display: flex;
+  font-weight: bold;
+  height: 46px;
+  width: 200px;
+  padding: 0px;
+  // border-top-left-radius: 8px;
+  // border-bottom-left-radius: 8px;
+    &:hover {
+    border: 2px solid rgba(7, 129, 229, 0.6);
+  }
+}
+
+.operationValue {
+ display: flex;
+ color: grey;
+  height: 46px;
+  width: 200px;
+  padding: 0px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+    &:hover {
+    border: 2px solid rgba(7, 129, 229, 0.6);
+  }
+}
+
+.xmark {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  border: 1px solid black;
+  color: black;
+  width: 50px;
+  height: 50px;
+  &:hover {
+    background-color: black;
+    color: white;
+  }
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+
+.icon {
+  display: flex;
+
+  // padding: 14px;
+  border-radius: 8px;
+  font-size: 25px;
+  // margin: 0;
+}

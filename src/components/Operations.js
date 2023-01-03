@@ -1,6 +1,11 @@
 import React from "react";
 import { createTasksOperations } from "../services/httpServices";
 import Operation from "./Operation";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faCirclePlus
+} from "@fortawesome/free-solid-svg-icons";
+import style from "../style/Operations.module.scss";
 
 const Operations = ({ task, form, setForm, operations, setOperations }) => {
   const submit = async (e) => {
@@ -18,29 +23,39 @@ const Operations = ({ task, form, setForm, operations, setOperations }) => {
   };
 
   return (
-    <>
+    <div className={style.container}>
+    
       {form && (
-        <form onSubmit={submit}>
+        <form onSubmit={submit} className={style.addOperations}>
           <input
             type="text"
             name="description"
-            placeholder="Some operation"
+            placeholder="operation description"
+            className={style.operations}
           ></input>
-          <button>Add</button>
+
+          <button className={style.btn}>
+            Add
+            <FontAwesomeIcon icon={faCirclePlus} className={style.add} />
+          </button>
         </form>
       )}
-      {operations.length > 0 &&
-        operations.map((op) => {
-          return (
-            <Operation
-              key={op.id}
-              operation={op}
-              status={task.status}
-              setOperations={setOperations}
-            />
-          );
-        })}
-    </>
+
+      <div>
+        {operations.length > 0 &&
+          operations.map((op) => {
+            return (
+              <Operation
+                key={op.id}
+                operation={op}
+                status={task.status}
+                setOperations={setOperations}
+                
+              />
+            );
+          })}
+      </div>
+    </div>
   );
 };
 

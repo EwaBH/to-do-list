@@ -48,8 +48,7 @@ const NewTask = ({ setTasks }) => {
           <button className={[style.btn, "all"].join(" ")}>
             Add task 
             <FontAwesomeIcon icon={faCirclePlus} className={style.add} />
-            {/* <span className="material-symbols-outlined">add_circle</span> */}
-          </button>
+                     </button>
         </form>
       </div>
     </>
