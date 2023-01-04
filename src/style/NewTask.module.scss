@@ -1,3 +1,5 @@
+@import "../style/global.scss";
+
 .container {
   display: flex;
   flex-direction: column;
@@ -7,6 +9,12 @@
   margin: 0 auto;
   box-shadow: 1px 4px 8px grey;
   border-radius: 8px;
+    @media #{$mobile} {
+    display: flex;
+    flex-direction: column;
+    width: 750px;
+    margin: 0 20px;
+  }
 }
 
 .header {
@@ -23,6 +31,12 @@
   height: 30px;
   padding: 10px;
   margin: 10px;
+    @media #{$mobile} {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    margin: 0 20px;
+  }
 }
 
 .btn {
@@ -39,4 +53,7 @@
 .add {
   margin-left: 10px;
   font-size: 20px;
+      @media #{$mobile} {
+    font-size: 22px;
+  }
 }

@@ -81,7 +81,7 @@ const Task = ({ task, setTasks }) => {
           <div>
             <button
               onClick={openAddOperationForm}
-              className={[style.btn, "all"].join(" ")}
+              className={[style.btn__addOperation, "all"].join(" ")}
             >
               Add operation
               <FontAwesomeIcon icon={faCirclePlus} className={style.add} />
@@ -89,19 +89,18 @@ const Task = ({ task, setTasks }) => {
 
             <button
               onClick={finishTask}
-              className={[style.btn3, "all"].join(" ")}
+              className={[style.btn__finish, "all"].join(" ")}
             >
               Finish
               <FontAwesomeIcon icon={faCheckToSlot} className={style.finish} />
             </button>
-           
           </div>
         )}
 
         {operations.length === 0 && task.status === "closed" && (
           <button
             onClick={deleteTaskItem}
-            className={[style.btn2, "all"].join(" ")}
+            className={[style.btn__bin, "all"].join(" ")}
           >
             <FontAwesomeIcon icon={faTrash} className={style.bin} />
           </button>

@@ -1,8 +1,16 @@
+@import "../style/global.scss";
+
 .container {
   display: flex;
   width: 1100px;
   margin: 0 auto;
   border: 1px solid lightgray;
+  @media #{$mobile} {
+    display: flex;
+    flex-direction: column;
+    width: 750px;
+    margin: 0 20px;
+  }
 }
 
 .clock {
@@ -23,7 +31,8 @@
     color: white;
   }
 }
-.btn2 {
+
+.btn__bin {
   display: flex;
   border: none;
   background-color: white;
@@ -70,6 +79,9 @@
   height: 22px;
   border-radius: 0.7rem;
   padding: 7px 7px 1px 7px;
+  @media #{$mobile} {
+    font-size: 22px;
+  }
 }
 
 .submitOperation {
@@ -81,16 +93,22 @@
   display: flex;
   justify-content: start;
   align-items: center;
+  @media #{$mobile} {
+    font-size: 22px;
+     width: 700px;
+   
+  }
 }
 .submitOperation2 {
   display: flex;
   align-items: center;
-  // justify-content: center;
-
   justify-content: end;
   width: 550px;
   height: 40px;
   padding: 20px;
+  @media #{$mobile} {
+    width: 700px;
+  }
   
 }
 
@@ -101,7 +119,6 @@
   background-color: white;
   border: 1px solid #28a745;
   color: #28a745;
-
   width: 50px;
   height: 50px;
   &:hover {
@@ -110,34 +127,37 @@
   }
 }
 
-.operationTime {
+.operation__time {
   display: flex;
   justify-content: end;
   right: 0;
 }
 
-.operationTimeDiscription {
+.operation__timeDiscription {
   display: flex;
   font-weight: bold;
   height: 46px;
   width: 200px;
   padding: 0px;
-  // border-top-left-radius: 8px;
-  // border-bottom-left-radius: 8px;
-    &:hover {
+  &:hover {
     border: 2px solid rgba(7, 129, 229, 0.6);
+  }
+  @media #{$mobile} {
+    font-size: 15px;
+    font-weight: 400;
+    width:300px;
   }
 }
 
 .operationValue {
- display: flex;
- color: grey;
+  display: flex;
+  color: grey;
   height: 46px;
   width: 200px;
   padding: 0px;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
-    &:hover {
+  &:hover {
     border: 2px solid rgba(7, 129, 229, 0.6);
   }
 }
@@ -161,9 +181,6 @@
 
 .icon {
   display: flex;
-
-  // padding: 14px;
   border-radius: 8px;
   font-size: 25px;
-  // margin: 0;
 }

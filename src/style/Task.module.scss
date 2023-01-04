@@ -1,3 +1,5 @@
+@import "../style/global.scss";
+
 .container {
   display: flex;
   justify-content: space-between;
@@ -9,6 +11,12 @@
   border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   background-color: rgb(229, 227, 227);
+   @media #{$mobile} {
+    display: flex;
+    flex-direction: column;
+    margin: 0 20px;
+    width: 750px;
+  }
 }
 
 .bin {
@@ -33,7 +41,7 @@
   
 }
 
-.btn {
+.btn__addOperation {
   background-color: rgb(29, 150, 168);
   border: none;
   color: #fff;
@@ -47,18 +55,20 @@
 .add {
   margin-left: 10px;
   font-size: 20px;
+      @media #{$mobile} {
+    font-size: 22px;
+  }
 }
 
-.btn2 {
+.btn__bin {
   border: none;
   background-color:  rgb(229, 227, 227);
 }
 
-.btn3 {
+.btn__finish {
   background-color: black;
   color: white;
   padding: 9px;
   margin: 20px 0;
   padding-left: 10px;
-  // margin-left: 8px;
 }

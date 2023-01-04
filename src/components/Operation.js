@@ -94,11 +94,11 @@ const Operation = ({ operation, status, setOperations }) => {
               className={style.operationValue}
             ></input>
 
-            <div className={[style.operationTime, "all"].join(" ")}>
+            <div className={[style.operation__time, "all"].join(" ")}>
               <input
                 type="number"
                 placeholder="Spent time in minutes"
-                className={style.operationTimeDiscription}
+                className={style.operation__timeDiscription}
               ></input>
 
               <button type="submit" className={style.disk}>
@@ -122,7 +122,7 @@ const Operation = ({ operation, status, setOperations }) => {
             )}
             <button
               onClick={deleteOperationItem}
-              className={[style.btn2, "all"].join(" ")}
+              className={[style.btn__bin, "all"].join(" ")}
             >
               <FontAwesomeIcon icon={faTrash} className={style.bin} />
             </button>

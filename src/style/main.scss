@@ -1,5 +1,9 @@
+@import "../style/global.scss";
 .all {
   border-radius: 8px;
-  font-size: 18px;
- font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+     @media #{$mobile} {
+    font-size: 22px;
   }
+}
